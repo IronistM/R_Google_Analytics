@@ -9,7 +9,7 @@ page.group<-c("measure","statistics","music")
 # setwd('C:/Users/m.parzakonis/Google Drive/MyCodeRants/GA/data')
 
 for (i in filters) {
-speed.df.1 <- ga$getData(i, 
+speed.df.1 <- ga$getData(id[1], 
                        start.date = "2012-08-01", 
                        end.date = today()-1,  
                        metrics = "ga:pageLoadTime,ga:pageLoadSample,ga:domainLookupTime,ga:pageDownloadTime,ga:redirectionTime,ga:serverConnectionTime,ga:serverResponseTime,ga:speedMetricsSample", 
@@ -18,7 +18,7 @@ speed.df.1 <- ga$getData(i,
                        max = 1500,
                        sort = "-ga:pageLoadSample")
 
-speed.df.2 <- ga$getData(i, 
+speed.df.2 <- ga$getData(id[1], 
                          start.date = "2012-08-01", 
                          end.date = today()-1,  
                          metrics = "ga:domInteractiveTime,ga:domContentLoadedTime,ga:domLatencyMetricsSample,ga:visits,ga:transactions,ga:bounces", 
