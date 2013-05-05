@@ -5,6 +5,7 @@ j<-1
 # get.start.date<-min(final_dataset$date)
 # Set up a filters vector to loop over the distinct categories of the blog
 filters<-c("ga:pagePath=~^/blog/category/measure/*;ga:pageLoadSample>0","ga:pagePath=~^/blog/category/statistics/*;ga:pageLoadSample>0","ga:pagePath=~^/blog/category/music/*;ga:pageLoadSample>0")
+page.group<-c("measure","statistics","music")
 # setwd('C:/Users/m.parzakonis/Google Drive/MyCodeRants/GA/data')
 
 for (i in filters) {
