@@ -1,3 +1,4 @@
+#### Adapted from http://randyzwitch.com/r-google-analytics-api/
 #### Connecting to Google Analytics API via R
 #### Uses OAuth 2.0
 #### https://developers.google.com/analytics/devguides/reporting/core/v3/ for documentation
