@@ -1,7 +1,7 @@
 require(googleVis)
 require(plyr)
 # We need to aggreagate data across countries first. teh function below does a nice job and many more
-# GroupBy function --------------------------------------------------------
+# GroupBy function -------------------------------------------------------
 ## Summarizes data.
 ## Gives count, mean, standard deviation, standard error of the mean, and confidence interval (default 95%).
 ##   data: a data frame.
