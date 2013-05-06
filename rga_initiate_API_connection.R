@@ -14,7 +14,7 @@ install_github("rga", "skardhamar")
 library(rga)
 library(lubridate)
 # library(ProjectTemplate)
-library(ggplot2)
+install.packages("ggplot2")
 setwd('C:/Users/m.parzakonis/Google Drive/MyCodeRants/GA/src')
 # Authenticating to GA API. Go to https://code.google.com/apis/console/ and create
 # an API application.  Don't need to worry about the client id and shared secret for
