@@ -7,14 +7,14 @@
 install.packages("devtools")
 library(devtools)
 install_github("rga", "skardhamar")
-
+install.packages("ggplot2")
 
 # Load rga package - requires bitops, RCurl, rjson
 # Load lubridate to handle dates
 library(rga)
 library(lubridate)
 # library(ProjectTemplate)
-install.packages("ggplot2")
+library("ggplot2")
 setwd('C:/Users/m.parzakonis/Google Drive/MyCodeRants/GA/src')
 # Authenticating to GA API. Go to https://code.google.com/apis/console/ and create
 # an API application.  Don't need to worry about the client id and shared secret for
