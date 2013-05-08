@@ -48,3 +48,9 @@ j<-j+1
 }
 
 summary(final_dataset)
+
+
+# Let's see the discrepancy between average and median page load times
+month.summary<-round(merge(aggregate(data=final_dataset,avgPageLoadTime~yearmo, FUN = median, na.rm = TRUE),aggregate(data=final_dataset,avgPageLoadTime~yearmo, FUN = mean, na.rm = TRUE),by="yearmo",2)
+names(month.summary)<-c("Year-Mo","Median Time","Average Time")
+month.summary
